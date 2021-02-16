@@ -36,7 +36,7 @@ public class PrototypeTest {
     @Test
     public void testPrototypeDoesNotExist(){
         //1. No such document
-        GDPRDocument gdpr1 = (GDPRDocument) DocumentPrototypeManager.getClonedDocument("TermsAndConditions");
-        assertEquals(gdpr1, null);
-    }   
+        PrototypeDocument termsAndConditions = DocumentPrototypeManager.getClonedDocument("TermsAndConditions");
+        assertEquals(termsAndConditions, null);
+    } 
 }
